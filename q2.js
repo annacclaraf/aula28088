@@ -1,7 +1,7 @@
 let somaIdades = 0;
 let contador = 0;
 
-for {
+while {
     let idade = Number(prompt("Digite a idade (0 ou menor para encerrar):"));
     if (idade <= 0) {
         break; 
