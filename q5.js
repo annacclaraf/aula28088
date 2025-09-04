@@ -1,15 +1,48 @@
+let n = Number(prompt("Quantas pessoas?"));
+let i = 0;
+let Febre = 0;
 
-let temp;
-let febre;
-let i;
-
-i = 0;
-febre = 0;
 while (i < n) {
-  temp = Number(prompt("Digite a temperatura da pessoa:" + (i + 1) + ));
+  let temp = Number(prompt(`Temperatura da pessoa ${i + 1}:`));
   if (temp > 38) {
-    febre++;
+    Febre++;
   }
   i++;
 }
-console.log("Pessoas com febre: " + febre);
+
+console.log("Pessoas com febre:", Febre);
+
+
+
+
+
+let n = Number(prompt("Quantas pessoas?"));
+let i = 0;
+let Febre = 0;
+
+do {
+  let temp = Number(prompt(`Temperatura da pessoa ${i + 1}:`));
+  if (temp > 38) {
+    Febre++;
+  }
+  i++;
+} while (i < n);
+
+console.log("Pessoas com febre:", Febre);
+
+
+
+
+
+
+let n = Number(prompt("Quantas pessoas?"));
+let Febre = 0;
+
+for (let i = 0; i < n; i++) {
+  let temp = Number(prompt(`Temperatura da pessoa ${i + 1}:`));
+  if (temp > 38) {
+    Febre++;
+  }
+}
+
+console.log("Pessoas com febre:", Febre);
